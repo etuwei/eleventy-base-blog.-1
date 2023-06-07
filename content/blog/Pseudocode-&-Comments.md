@@ -6,8 +6,6 @@ tags:
   - Pseudocode
 ---
 
-# Pseudocode & Comments
-
 ## Task 1
 
 ```javascript
