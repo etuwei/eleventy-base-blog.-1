@@ -5,7 +5,9 @@ date: 2023-6-04
 tags:
   - Pseudocode
 ---
+<!DOCTYPE html>
 
+<body>
 // Task 1
 
 // Define a function to calculate the percentage of a number
@@ -52,4 +54,4 @@ console.log(`${percentage}% of ${number} is {calculatedPercentage}`);
 //     For each ingredient in recipe.ingredients:
 //         Log the ingredient
 
-
+</body>
