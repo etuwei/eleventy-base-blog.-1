@@ -1,9 +1,7 @@
 ---
 title: Intro to JS Practicals. Tasks.
-description: This is a post on My Blog about agile frameworks.
+description: This is a post on My Blog for JS tasks.
 date: 2023-05-23
-tags:
-  - another tag
 ---
 <!DOCTYPE html>
 <html>
