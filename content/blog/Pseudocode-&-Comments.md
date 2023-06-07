@@ -1,7 +1,7 @@
 ---
 title: Pseudocode & Comments
 description: This is a post on My Blog creating pseudocodes and comments for 
-date: 2023-6-04
+date: 2023-06-04
 tags:
   - Pseudocode
 ---
