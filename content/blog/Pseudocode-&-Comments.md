@@ -6,10 +6,6 @@ tags:
   - Pseudocode
 ---
 
-# 11ty Script Tag Example
-
-```html
-<script>
 // Task 1
 
 // Define a function to calculate the percentage of a number
@@ -26,11 +22,7 @@ const percentage = 30;
 const calculatedPercentage = percentageCalculator(number, percentage);
 
 // Output the result
-console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
-</script>
-
-
-
+console.log(`${percentage}% of ${number} is {calculatedPercentage}`); 
 
 // Task 2
 
@@ -59,3 +51,5 @@ console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
 // For each recipe in "favoriteRecipes":
 //     For each ingredient in recipe.ingredients:
 //         Log the ingredient
+
+
