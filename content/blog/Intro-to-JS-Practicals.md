@@ -8,85 +8,108 @@ tags:
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JavaScript Tasks</title>
-  <script>
-    // Task 1
-    function percentageCalculator(number, percentage) {
-      const result = (percentage / 100) * number;
-      return result;
+  <title>Task Form</title>
+  <style>
+    .form-group {
+      margin-bottom: 20px;
     }
 
-    const number = 135;
-    const percentage = 30;
+    .form-label {
+      display: block;
+      font-weight: bold;
+    }
 
-    const calculatedPercentage = percentageCalculator(number, percentage);
-    console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
+    .form-input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-    // Task 2
-    function drinkOrder(size, drink) {
+    .form-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task Form</h1>
+
+  <div class="form-group">
+    <label for="number">Number:</label>
+    <input type="number" id="number" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="percentage">Percentage:</label>
+    <input type="number" id="percentage" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <button onclick="calculatePercentage()" class="form-button">Calculate Percentage</button>
+  </div>
+
+  <div class="form-group">
+    <label for="size">Size:</label>
+    <input type="text" id="size" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="drink">Drink:</label>
+    <select id="drink" class="form-input" required>
+      <option value="cola">Cola</option>
+      <option value="lemon">Lemonade</option>
+      <option value="orange">Orangeade</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <button onclick="placeOrder()" class="form-button">Place Order</button>
+  </div>
+
+  <div class="form-group">
+    <label for="number1">Number 1:</label>
+    <input type="number" id="number1" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="number2">Number 2:</label>
+    <input type="number" id="number2" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="operator">Operator:</label>
+    <select id="operator" class="form-input" required>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <button onclick="performCalculation()" class="form-button">Perform Calculation</button>
+  </div>
+
+  <script>
+    function calculatePercentage() {
+      const number = document.getElementById('number').value;
+      const percentage = document.getElementById('percentage').value;
+      const result = (percentage / 100) * number;
+      alert(`${percentage}% of ${number} is ${result}`);
+    }
+
+    function placeOrder() {
+      const size = document.getElementById('size').value;
+      const drink = document.getElementById('drink').value;
       let message;
 
       switch (drink) {
-        case "cola":
+        case 'cola':
           message = `You have ordered a ${size} of Cola.`;
-          break;
-        case "lemon":
-          message = `You have ordered a ${size} of Lemonade.`;
-          break;
-        case "orange":
-          message = `You have ordered a ${size} of Orangeade.`;
-          break;
-        default:
-          message = "Invalid drink selection.";
-          break;
-      }
-
-      return message;
-    }
-
-    const size = "Medium";
-    const drink = "cola";
-
-    const orderMessage = drinkOrder(size, drink);
-    console.log(orderMessage);
-
-    // Task 3
-    function calculator(number1, number2, operator) {
-      let result;
-
-      switch (operator) {
-        case "+":
-          result = number1 + number2;
-          break;
-        case "-":
-          result = number1 - number2;
-          break;
-        case "*":
-          result = number1 * number2;
-          break;
-        case "/":
-          result = number1 / number2;
-          break;
-        case "%":
-          result = number1 % number2;
-          break;
-        default:
-          return "Invalid operator.";
-      }
-
-      return result;
-    }
-
-    const number1 = 10;
-    const number2 = 5;
-    const operator = "+";
-
-    const calculationResult = calculator(number1, number2, operator);
-    console.log(`${number1} ${operator} ${number2} = ${calculationResult}`);
-  </script>
-</head>
-<body>
-  <!-- You can add any HTML content here if needed -->
-</body>
-</html>
 
