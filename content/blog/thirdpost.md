@@ -3,11 +3,14 @@ title: Loops, Arrays and Objects - Practical lesson tasks.
 description: More tasks for Loops, Arrays and Objects.
 date: 2023-05-18
 tags:
-  - second tag
-  - posts with two tags
+  - Loops
+  - Arrays
+  - Objects
 ---
+
 ```Javascript
-#  Task 1 - Shopping Cart
+// Task 1 - Shopping Cart
+
 let shoppingCart = [
   { name: "loaf of bread", type: "food", quantity: 1, price: 0.85 },
   { name: "multipack beans", type: "food", quantity: 1, price: 1 },
@@ -21,7 +24,7 @@ let shoppingCart = [
   { name: "onions", type: "food", quantity: 3, price: 0.4 },
 ];
 
-// Part 1
+//  Part 1
 function calculateTotal(cart) {
   let totalPrice = 0;
   for (let i = 0; i < cart.length; i++) {
@@ -96,7 +99,6 @@ function getItemsInPriceRange(cart, lowPrice, highPrice, includeQuantity) {
 
 console.log("Items in Price Range (Part 5, includeQuantity=true):", getItemsInPriceRange(shoppingCart, 2, 5, true));
 console.log("Items in Price Range (Part 5, includeQuantity=false):", getItemsInPriceRange(shoppingCart, 2, 5, false));
-  
   
   
   
