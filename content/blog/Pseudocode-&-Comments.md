@@ -1,41 +1,34 @@
 ---
 title: Pseudocode & Comments
 description: This is a post on My Blog creating pseudocodes and comments for 
-date: 2018-07-04
+date: 2023-6-04
 tags:
   - Pseudocode
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Comments</title>
-</head>
-<body>
+# 11ty Script Tag Example
 
-  <script>
-    // Task 1
+```html
+<script>
+// Task 1
 
-    // Define a function to calculate the percentage of a number
-    function percentageCalculator(number, percentage) {
-      const result = (percentage / 100) * number; // Calculate the result by multiplying the number with the percentage divided by 100
-      return result; // Return the calculated percentage
-    }
+// Define a function to calculate the percentage of a number
+function percentageCalculator(number, percentage) {
+  const result = (percentage / 100) * number; // Calculate the result by multiplying the number with the percentage divided by 100
+  return result; // Return the calculated percentage
+}
 
-    // Define the number and percentage values
-    const number = 135;
-    const percentage = 30;
+// Define the number and percentage values
+const number = 135;
+const percentage = 30;
 
-    // Call the percentageCalculator function with the given number and percentage
-    const calculatedPercentage = percentageCalculator(number, percentage);
+// Call the percentageCalculator function with the given number and percentage
+const calculatedPercentage = percentageCalculator(number, percentage);
 
-    // Output the result
-    console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
-  </script>
-</body>
-</html>
+// Output the result
+console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
+</script>
+
 
 
 
