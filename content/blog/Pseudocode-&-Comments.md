@@ -5,11 +5,12 @@ date: 2023-6-04
 tags:
   - Pseudocode
 ---
-<!DOCTYPE html>
 
-<body>
-// Task 1
+# Pseudocode & Comments
 
+## Task 1
+
+```javascript
 // Define a function to calculate the percentage of a number
 function percentageCalculator(number, percentage) {
   const result = (percentage / 100) * number; // Calculate the result by multiplying the number with the percentage divided by 100
@@ -24,7 +25,8 @@ const percentage = 30;
 const calculatedPercentage = percentageCalculator(number, percentage);
 
 // Output the result
-console.log(`${percentage}% of ${number} is {calculatedPercentage}`); 
+console.log(`${percentage}% of ${number} is ${calculatedPercentage}`);
+
 
 // Task 2
 
@@ -54,4 +56,3 @@ console.log(`${percentage}% of ${number} is {calculatedPercentage}`);
 //     For each ingredient in recipe.ingredients:
 //         Log the ingredient
 
-</body>
