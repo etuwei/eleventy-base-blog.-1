@@ -110,4 +110,5 @@ date: 2023-05-23
       switch (drink) {
         case 'cola':
           message = `You have ordered a ${size} of Cola.`;
-
+  </script>
+</body>
