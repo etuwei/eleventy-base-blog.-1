@@ -3,7 +3,7 @@ title: Pseudocode & Comments
 description: This is a post on My Blog creating pseudocodes and comments for 
 date: 2018-07-04
 tags:
-  - number 2
+  - Pseudocode
 ---
 
 // Task 1
